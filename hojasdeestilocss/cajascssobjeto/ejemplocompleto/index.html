@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos y Bordes CSS</title>
+</head>
+
+<style>
+    .separador {
+
+        background: url('img/lineaazul.png') repeat-x top, url('img/sombraazul.png') repeat-x top;
+        margin-top: 50px;
+        padding-top: 25px;
+        text-align: center;
+        clear: both;
+
+
+    }
+
+    html {
+
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aliceblue;
+    }
+
+    /*
+
+    .banner_image {
+      
+        margin-top: 15px;
+        height: 378px;
+        border-radius: 5px;
+        background: url('./img/bannerrosadim.jpg') no-repeat center;
+        position: relative;
+        box-shadow: 0px 4px 4px #1c1a19;
+        margin-bottom: 25px;
+    }
+
+    */
+
+
+    .titulo-principal {
+        text-align: center;
+        font-size: 2em;
+        color: purple;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+    }
+
+    .titulo-seccion {
+        text-align: center;
+        font-size: 1.5em;
+        color: blue;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+
+    .banner_image2 {
+
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        height: 378px;
+        border-radius: 5px;
+
+        position: relative;
+        box-shadow: 0px 4px 4px #1c1a19;
+        margin-bottom: 25px;
+
+    }
+
+    .banner_image2 .imagen {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+
+    }
+
+    .banner_descripcion {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0px 0px 5px 5px;
+        width: 99.5%;
+        height: 33px;
+        padding-top: 15px;
+        padding-left: 4px;
+        background-color: rgb(24, 24, 24);
+        /* Old browsers will read this */
+        background-color: rgba(24, 24, 24, 0.8);
+        /* New browsers will read this */
+        color: pink;
+        font-size: 0.8em;
+        z-index: 2
+    }
+
+
+    .boton-azul {
+        display: inline-block;
+        height: 25px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        background: rgb(197, 221, 233);
+        border: 1px solid #0e2ee1;
+        border-radius: 5px;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 3px 8px 0px 8px;
+        color: purple;
+        text-decoration: none;
+    }
+
+    aside {
+        display: inline-block;
+        vertical-align: top;
+        text-align: justify;
+        width: 40%;
+    }
+
+    .left-aside {
+        position: relative;
+        float: left;
+        width: 235px;
+        background-color: #ca2eb5;
+        box-shadow: 0px 2px 5px #1c1a19;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-size: 0.9em;
+        margin: 30px
+    }
+
+    .right-aside {
+        position: relative;
+        float: right;
+        width: 235px;
+        background-color: #0b0674;
+        box-shadow: 0px 2px 5px #1c1a19;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-size: 0.9em;
+        margin: 30px;
+    }
+
+
+
+    #flecha-rosa {
+        position: absolute;
+        top: 100px;
+        left: -30px;
+    }
+
+    #flecha-azul {
+        position: absolute;
+        top: 100px;
+        right: -30px;
+    }
+
+    .imagen-aside {
+
+        width: 200px;
+        height: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .social-icons {
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .texto-principal {
+        height: 70vh;
+        margin: auto;
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        column-count: 2;
+        column-gap: 3em;
+    }
+
+
+    .footer {
+        background: url('img/topa.png') no-repeat top center, url('img/lineaazul.png') repeat-x top, url('img/sombraazul.png') repeat-x top;
+        padding-top: 25px;
+        text-align: center;
+        clear: both
+    }
+
+    .contactos {
+        width: 26%;
+        margin: auto;
+    }
+
+
+   .contactos ul {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+        margin-left:20px;
+        width: 40%;
+        list-style-image: url('img/external_link.png');
+        padding-left: 2px;
+        text-align: left;
+    }
+
+    .contactos a {
+        text-decoration: none;
+        color: #760001;
+    }
+</style>
+
+<body>
+
+    <section class="banner_image2">
+        <img class="imagen" src="./img/bannerrosadim.jpg" alt="" />
+
+        <div class="banner_descripcion">
+            <span>Reflections on my holiday in the United States...</span>
+            <a href="#" class="boton-azul">See article <img src="img/small_arrow.png" alt="" /></a>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <h1 class="titulo-principal">Pagina con aplicaciones de CSS</h1>
+
+    <h3 class="titulo-seccion">Sección con objetos creados con css. Bordes, background y sombras</h3>
+
+
+    <section>
+        <aside class="left-aside">
+            <h1>About the author</h1>
+            <img src="img/flecharosad.png" alt="" id="flecha-rosa" />
+            <img class="imagen-aside" src="img/gatitodurmiendo.png" alt="gatito durmiendo" />
+            <p>Let me introduce myself: My name's Chatty Cat. I was born on 23 November 2024.</p>
+            <p>A bit meager, is it not? This is why I've now decided to write my biography to let my readers know who I
+                really am.</p>
+            <div class="social-icons"><img src="img/facebook.png" alt="Facebook" /><img src="img/twitter.png"
+                    alt="Twitter" /><img src="img/vimeo.png" alt="Vimeo" /><img src="img/flickr.png" alt="Flickr" /><img
+                    src="img/rss.png" alt="RSS" /></div>
+        </aside>
+        <aside class="right-aside">
+            <h1>About the author</h1>
+            <img src="img/flechaazuld.png" alt="" id="flecha-azul" />
+            <img src="img/zebra.png" class="imagen-aside" alt="Zebraal Picture" />
+            <p>Let me introduce myself: My name's Zebraal. I was born on 3 MAy 2024</p>
+            <p>A bit crazy, is it not? This is why I've now decided to compete in cross-country internationally</p>
+            <div class="social-icons"><img src="img/facebook.png" alt="Facebook" /><img src="img/twitter.png"
+                    alt="Twitter" /><img src="img/vimeo.png" alt="Vimeo" /><img src="img/flickr.png" alt="Flickr" /><img
+                    src="img/rss.png" alt="RSS" /></div>
+        </aside>
+    </section>
+
+
+
+
+    <h3 class="titulo-seccion">Sección con parrafos</h3>
+
+
+    <section class="texto-principal">
+
+
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, vel nascetur sapien penatibus elementum ad sagittis
+            augue, quisque consequat orci varius nam imperdiet. Vivamus feugiat suspendisse orci congue risus dapibus
+            inceptos placerat, nisl diam fusce mi etiam pellentesque integer luctus taciti, leo vulputate himenaeos
+            ultricies erat tristique natoque. Magnis egestas feugiat sagittis cursus interdum aptent nam himenaeos,
+            mauris
+            suspendisse aliquet vulputate bibendum quis class, mollis sed facilisi velit arcu imperdiet turpis.
+
+            Placerat tortor erat cubilia platea egestas fames magna, feugiat vehicula penatibus ornare duis et metus
+            purus,
+            sem felis hendrerit etiam leo tristique. Curae turpis conubia eros feugiat interdum per vivamus donec porta
+            justo eget blandit, inceptos hac nunc aenean dui nam curabitur integer nascetur malesuada dis, quis quisque
+            montes fames aliquam sagittis netus vestibulum tincidunt eu dignissim. Erat est blandit venenatis sagittis
+            vel
+            cubilia, ac sed mi ridiculus ultricies netus, justo sapien feugiat rutrum imperdiet.
+
+        </p>
+
+    </section>
+
+
+    <footer class="footer">
+       
+            <div class="contactos">
+                <h1>My friends</h1>
+                <ul>
+                    <li><a href="#">Pupi the rabbit</a></li>
+                    <li><a href="#">Mr Baobab</a></li>
+                    <li><a href="#">Kaiwaii</a></li>
+                    <li><a href="#">Perceval.eu</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Ji</a></li>
+                    <li><a href="#">Super cucumber</a></li>
+                    <li><a href="#">Prince</a></li>
+                    <li><a href="#">Mr Fan</a></li>
+                </ul>
+            </div>
+     </footer>
+
+
+</body>
+
+</html>

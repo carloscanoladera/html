@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>font-style (1). Tipo de letra (fuente). </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=email,lock,person" rel="stylesheet" />
+       <style>
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .icon-input {
+            padding: 10px 15px 10px 45px;
+            border: 2px solid #2196F3;
+            border-radius: 25px;
+            width: 300px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f7f7f7;
+            outline: none;
+        }
+
+        .input-icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #777;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contenedor">
+        <h1>Formulario con CSS</h1>
+        <form>
+            <fieldset>
+                <legend>Información Personal</legend>
+                <div class="input-container">
+                    <i class="material-symbols-outlined input-icon">person</i>
+                    <input type="text" class="icon-input" placeholder="Nombre">
+                </div>
+                <div class="input-container">
+                    <i class="material-symbols-outlined  input-icon">email</i>
+                    <input type="text" class="icon-input" placeholder="Correo electrónico">
+                </div>
+                <div class="input-container">
+                    <i class="material-symbols-outlined input-icon">lock</i>
+                    <input type="password" class="icon-input" placeholder="Contraseña">
+                </div>
+            </fieldset>
+
+        </form>
+    </section>
+</body>
+
+</html>

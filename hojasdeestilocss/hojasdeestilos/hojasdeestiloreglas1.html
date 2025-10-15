@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Número de atributos id en el selector (1). </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p#nuevo {
+            color: red;
+        }
+
+        p {
+            color: black;
+        }
+
+        div#viejo {
+            border: black 3px solid;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        div span#nuevo {
+            color: red;
+        }
+
+        div#viejo span#nuevo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="nuevo">Esto es un párrafo con atributo id "nuevo"</p>
+
+    <p>Esto es un párrafo sin atributo id.</p>
+
+    <div id="viejo"> Dios premia a los justos de corazon</div>
+    <div><span id="nuevo">atributo id "nuevo" </span></div>
+    <div id="viejo"><span id="nuevo">atributo id "viejo" id "nuevo" se aplica la regla con mas elementos </span></div>
+
+</body>
+
+</html>

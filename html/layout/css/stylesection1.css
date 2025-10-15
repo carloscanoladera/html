@@ -1,0 +1,56 @@
+#title_header {
+background: cornflowerblue;
+border-top:  rgba(114, 250, 155, 0.527) 5px groove;
+border-bottom:  rgba(114, 250, 155, 0.527) 5px groove;
+border-radius: 20px;
+}
+#title_nav{
+
+    
+    display: inline-block;
+    width: 30%;
+    text-align:center;
+    margin-left: 35%;
+    }
+    #page_title{
+
+        margin-left: 20%;
+        border-top:  powderblue 5px groove;
+        border-radius: 10px;
+        display: inline-block;
+        width: 60%;
+        text-align:center;
+        vertical-align:bottom ;
+        }
+
+        #title_nav ul
+        {
+            list-style-type: none;
+        }
+        
+        #title_nav li
+        {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        #title_nav a {
+
+            width:10%;
+            font-size:2em;
+            text-align: center;
+        }
+
+        nav a
+{
+    font-size: 1.3em;
+    color: #625ac5;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #007600;
+    border-bottom: 3px solid #007600;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos y Bordes CSS</title>
+</head>
+
+<style>
+
+     
+    * {
+
+        box-sizing: border-box;
+    }
+
+
+    body {
+        padding: 0;
+        margin: 0;
+   
+    }
+
+    .forma-container {
+
+        width: 100%;
+        border: 7px solid red;
+        padding: 50px;
+        box-sizing: border-box;
+      
+        
+
+    }
+
+    .forma1 {
+
+        background-image: url('https://www.mclibre.org/consultar/htmlcss/css/ejemplos/fondos/tartan.png');
+        width: 25%;
+        padding: 15px;
+        border: 2px solid gold;
+        border-radius: 15px;
+        justify-items: center;
+        font-size: 1.5em;
+        color: red;
+        margin: 20px;
+
+        display: inline-block;
+
+
+    }
+
+    .forma1:hover {
+
+        border: 6px solid red;
+
+    }
+
+
+    .forma1 h1 {
+
+        color: darkblue;
+    }
+
+    .forma1 p {
+
+        color: darkblue;
+        text-align: justify;
+    }
+
+
+
+    .forma1 .imagen-forma {
+
+        width: 20%;
+        display: block;
+
+    }
+
+
+
+    .forma2 {
+
+        background-color: aliceblue;
+        width: 15%;
+        border: 2px dotted orange;
+        font-family: 'Trebuchet MS', oblique, sans-serif;
+        font-size: 1, 2 em;
+        font-weight: bolder;
+        margin: 20px;
+        box-shadow: 3px 3px 3px 3px rgba(4, 240, 248, 0.2);
+          display: inline-block;
+               vertical-align: top;
+
+    }
+
+    .forma2 .imagen-forma {
+
+        width: 80%;
+
+    }
+
+    .forma2 h1 {
+
+        color: darkblue;
+        text-align: center;
+
+    }
+
+    .forma2 p {
+
+        color: darkblue;
+        text-align: justify;
+
+    }
+
+
+    .forma3 {
+
+        background-color: blueviolet;
+        padding: 50px;
+        margin:20px;
+        width: 250px;
+        height: 250px;
+        color: white;
+        font-size: 1.4em;
+        align-content: center;
+        text-align: center;
+        border-radius: 100%;
+        align-content: center;
+        border: 3px solid blanchedalmond;
+        margin:20px;
+        text-shadow: 5px 5px 5px white ;
+          display: inline-block;
+           vertical-align: top;
+
+    }
+
+    .forma3:hover {
+
+        width: 300px;
+        height: 300px;
+        background-color: blanchedalmond;
+        color: blueviolet;
+        text-shadow: 5px 5px 5px darkblue ;
+    }
+
+    .forma4 {
+
+        width: 50px;
+        height:150px;
+        background-color: brown;
+        border: 7px solid blanchedalmond;
+
+        position:absolute;
+        top:0px;
+        left: 0px;
+        clear: both;
+
+    }
+
+
+    .forma5 {
+
+        width: 200px;
+        height:80px;
+        background-color: antiquewhite;
+        border: 7px solid blue;
+      
+        box-shadow:  12px 14px 2px rgba(0,0,0,0.47);
+         clear: both;
+        margin:auto;
+
+    }
+
+    .mifooter {
+        width:100%;
+          border: 7px solid red;
+           clear: both;
+
+           height: 12vh;
+           position: fixed;
+           bottom: 0px;
+           left:0px;
+    }
+
+</style>
+
+<body>
+
+
+
+
+
+    <section class="forma-container">
+
+        <h1 class="titulo-seccion">Sección con objetos creados con css. Bordes, background y sombras</h1>
+
+        <aside class="forma1">
+            <h1>Sam</h1>
+
+            <img class="imagen-forma"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Wikipedia_logo_bronze.png" alt="wikipedia" />
+            <p>And I know you're worried at night I won't find my way</p>
+            <p>And I used to shine bright like gold Now I'm all indigo My colors are darker and cold </P>
+            <p> I think it's time that I went home And I don't understand why I always feel dead and alone
+                Well, I used to shine bright like gold Now I'm all indigo</p>
+
+        </aside>
+        <aside class="forma2">
+            <h1>Noah</h1>
+            <img class="imagen-forma"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt=""
+                id="flecha-rosa" />
+
+            <p>Gone by day and gone by night It's not an easy road that leads you to the light
+                It's windy now but someday it'll straighten out</p>
+            <p>You only get one shot, everything to lose Lord take me now I'm broken and bruised
+                Can you save my soul cause I need you Cause I need you</p>
+
+        </aside>
+
+
+        <section class="forma3">
+
+            <h3> Text inside the Circle</h3>
+
+
+        </section>
+
+
+          <section class="forma4"></section>
+
+
+          <footer class="mifooter">
+           <section class="forma5"></section>
+         </footer>
+    </section>
+
+
+</body>
+
+</html>

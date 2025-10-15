@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        html {
+            background: #b3b3b3;
+            padding: 15px;
+            border: 5px solid white;
+            margin: 15px;
+
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fa923f;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 0;
+            margin-top: 30px;
+        }
+
+        .parent {
+            display: block;
+            background: white;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 0;
+            align-items: center;
+
+        }
+
+
+        .parent .navegacion {
+            background: rgb(105, 105, 109);
+            color: white;
+            padding: 10px;
+            border: 5px solid black;
+            margin: 10px;
+
+        }
+
+        .parent .navegacion {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .parent .bloque {
+
+            width: 28%;
+            height: 30vh;
+            color: white;
+            padding: 20px;
+            margin-left: 20px;
+            background: rgb(121, 121, 246);
+
+            border: 5px solid darkblue;
+            display: inline-block;
+
+
+
+        }
+
+        .parent .miaside {
+            width: 20%;
+            height: 60vh;
+            color: blue;
+            padding: 20px;
+            background: rgb(121, 246, 121);
+            border: 5px solid black;
+            text-align: left;
+            display: inline-block;
+
+
+        }
+
+        .mifooter {
+            margin-top: 20px;
+            height: 50px;
+            background: rgb(246, 121, 121);
+            border: 5px solid black;
+            clear: both;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 900;
+        }
+
+
+        @media only screen and (max-width: 700px) {
+
+
+
+            .parent .miaside {
+                display: block;
+                height: 20vh;;
+                width: 80%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .parent .miaside li {
+
+                display: inline-block;
+            }
+
+            .parent .miaside p {
+
+                display: none;
+
+            }
+
+            .parent .bloque {
+                display: block;
+                width: 80%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+
+
+
+
+
+        }
+
+
+
+        @media only screen and (min-width:701px) and (max-width: 1100px) {
+
+            .parent .miaside {
+
+                display: block;
+                width: 70%;
+                height: 20vh;
+                margin: auto;
+                margin-bottom: 20px;
+            
+            }
+
+             .parent .bloque {
+
+                margin-left:10%;
+                
+
+             }
+
+
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main class="parent">
+        <nav class="navegacion">Barra de navegacion</nav>
+
+        <aside class="miaside">
+            <p>Menu lateral</p>
+            <ul>
+
+                <li>Inicio</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+                <li>Acerca de</li>
+            </ul>
+        </aside>
+        <article class="bloque">Bloque I. Introducción</article>
+        <article class="bloque">Bloque II. Características</article>
+    </main>
+    <footer class="mifooter"> Corporacion aceitunera. FOOTER</footer>
+</body>
+
+</html>
