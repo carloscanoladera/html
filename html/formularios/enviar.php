@@ -9,16 +9,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validar los datos (puedes agregar más validaciones según tus necesidades)
     if (empty($nombre) || empty($email)) {
-        echo "Por favor, completa todos los campos.";
+        echo "<h3>Por favor, completa todos los campos.</h3>";
         exit;
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Por favor, ingresa un correo electrónico válido.";
+        echo "<h3>Por favor, ingresa un correo electrónico válido.</h3>";
         exit;
     }
 
-    echo "Gracias, $nombre. Tu mensaje ha sido recibido.";
+    echo "<h3>Gracias, $nombre. Tu mensaje ha sido recibido.</h3>";
 }
 
 ?>
