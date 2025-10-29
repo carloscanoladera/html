@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo iconos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "FontAwesome";
+            src: url("fontawesome-webfont.woff2");
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            font-family: "FontAwesome", sans-serif;
+            font-size: 200%;
+        }
+
+        .fa-times-circle::before {
+            font-family: "FontAwesome", sans-serif;
+            content: "\f057";
+        }
+
+        .fa-check-circle::before {
+            font-family: "FontAwesome", sans-serif;
+            content: "\f058";
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>a b c d e f g ...</p>
+
+    <p>&#xf000; &#xf001; &#xf002; &#xf003; &#xf004;
+        &#xf005; &#xf006; &#xf007; &#xf008; &#xf009;<br>
+        &#xf010; &#xf011; &#xf012; &#xf013; &#xf014;
+        &#xf015; &#xf016; &#xf017; &#xf018; &#xf019;<br>
+        ...</p>
+
+
+    <p class="fa-check-circle"> </p>
+
+    <p><span class="fa-times-circle"></span>No funciona</p>
+
+
+    <p><i class="fa fa-check-circle"></i> Me gusta</p>
+
+    <p><i class="fa fa-times-circle"></i> No me gusta</p>
+
+</body>
+
+</html>
